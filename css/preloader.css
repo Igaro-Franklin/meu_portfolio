@@ -1,0 +1,287 @@
+/* ------------------------------------------ Preloader ------------------------------------------ */
+
+@keyframes preLoaderDesaparecer{
+    0%{
+        opacity: 1;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.pre-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    animation: preLoaderDesaparecer 12s linear;
+    z-index: 10;
+}
+
+
+/* ------------------------------------------ Textos ------------------------------------------ */
+
+@keyframes slide-back {
+    0% {
+              transform: translateY(-100px);
+              font-size: 0;
+    }
+    100% {
+              transform: translateY(0);
+              font-size: 40px;
+    }
+}
+
+@keyframes slide-top {
+    0% {
+              transform: translateY(100px);
+              font-size: 0;
+    }
+    100% {
+              transform: translateY(0);
+              font-size: 40px;
+    }
+}
+
+
+.meuNome, .port{
+    display: flex;
+    color: white;
+    margin: 20px;
+    filter: drop-shadow(3px 3px 2px #3f0071);
+    transform:translateY(200px);
+}
+
+.meuNome div, .port div{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.letra-descendo{
+    animation: slide-back 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.letra-subindo{
+    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* deley's */
+
+.deley1-0{
+    animation-delay: 1s;
+}
+
+.deley1-2{
+    animation-delay: 1.2s;
+}
+
+.deley1-4{
+    animation-delay: 1.4s;
+}
+
+.deley1-6{
+    animation-delay: 1.6s;
+}
+
+.deley1-8{
+    animation-delay: 1.8s;
+}
+
+.deley2-0{
+    animation-delay: 2s;
+}
+
+.deley2-2{
+    animation-delay: 2.2s;
+}
+
+.deley2-4{
+    animation-delay: 2.4s;
+}
+
+.deley2-6{
+    animation-delay: 2.6s;
+}
+
+.deley2-8{
+    animation-delay: 2.8s;
+}
+
+.deley3-0{
+    animation-delay: 3s;
+}
+
+.deley3-2{
+    animation-delay: 3.2s;
+}
+
+.deley3-4{
+    animation-delay: 3.4s;
+}
+
+.deley4-0{
+    animation-delay: 4s;
+}
+
+.deley4-2{
+    animation-delay: 4.2s;
+}
+
+.deley4-4{
+    animation-delay: 4.4s;
+}
+
+.deley4-6{
+    animation-delay: 4.6s;
+}
+
+.deley4-8{
+    animation-delay: 4.8s;
+}
+
+.deley5-0{
+    animation-delay: 5s;
+}
+
+.deley5-2{
+    animation-delay: 5.2s;
+}
+
+.deley5-4{
+    animation-delay: 5.4s;
+}
+
+.deley5-6{
+    animation-delay: 5.6s;
+}
+
+.deley5-8{
+    animation-delay: 5.8s;
+}
+
+.deley6-0{
+    animation-delay: 6s;
+}
+
+.deley6-2{
+    animation-delay: 6.2s;
+}
+
+.deley6-4{
+    animation-delay: 6.4s;
+}
+
+.deley6-6{
+    animation-delay: 6.6s;
+}
+
+.deley6-8{
+    animation-delay: 6.8s;
+}
+
+.deley7-0{
+        animation-delay: 7s;
+}
+
+
+/* ------------------------------------------ loader ------------------------------------------ */
+.loader {
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.6);
+    transform-origin: 50% 60%;
+    transform: perspective(800px) rotateX(66deg);
+    animation: spinner-wiggle 1.2s infinite;
+  }
+  
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    margin: -4px;
+    box-sizing: inherit;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    opacity: .05;
+    border: inherit;
+    border-color: transparent;
+    animation: spinner-spin 1.2s cubic-bezier(0.6, 0.2, 0, 0.8) infinite, spinner-fade 1.2s linear infinite;
+  }
+  
+  .loader:before {
+    border-top-color: #3f0071;
+  }
+  
+  .loader:after {
+    border-top-color: #241023;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes spinner-spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spinner-fade {
+    20% {
+      opacity: .1;
+    }
+  
+    40% {
+      opacity: 1;
+    }
+  
+    60% {
+      opacity: .1;
+    }
+  }
