@@ -378,88 +378,8 @@ figcaption a:hover{
     filter: drop-shadow(2px 5px 2px #3f0071);
 }
 
-/* ------------------------------------------- FORMAÇÃO ------------------------------------------- */
 
-.card-formacao{
-    width: 330px;
-}
-
-.anhanguera{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/1.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* logica de programação */
-
-.log-programacao{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/2.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* design grafico */
-
-.des-grafico{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/3.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* html e css na prática */
-
-.html-css{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/4.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* JS para iniciantes */
-
-.workover{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/7.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* banco de dados */
-
-.danki-code{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/6.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* Git e GitHub */
-
-.git-github{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/5.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* ------------------------------------------- FORMAÇÃO ------------------------------------------- */
+/* ------------------------------------------- FOOTER ------------------------------------------- */
 
 footer{
     display: flex;
