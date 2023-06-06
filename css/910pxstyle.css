@@ -47,9 +47,9 @@
     }
 
     .menu-mobile ul{
-        width: 40%;
-        height: 80vh;
-        margin-left: 60%;
+        width: 50%;
+        height: 60vh;
+        margin-left: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -57,7 +57,7 @@
         list-style: none;
         transition: all 1s;
         background-color: #3f0071;
-        border-radius: 400px 0 0 400px;
+        border-radius: 100px 0 0 100px;
         text-align: right;
     }
 
@@ -74,7 +74,7 @@
     }
 
     .btn-menu{
-        width: 6%;
+        width: 40px;
         margin: 10px 4% 10px 90%;
         height: 40px;
         float: right;
@@ -82,10 +82,11 @@
         border-radius: 10px;
         box-shadow: 2px 2px 2px white;
         background-color: #3f0071;
+        cursor: pointer;
     }
 
     .btn-menu i{
-        font-size: 35px;
+        font-size: 30px;
         color: white;
     }
 
@@ -199,10 +200,10 @@
     margin: auto;
 }
 
-.proj-dest, .proj-dest, 
 .proj-dest{
     width: 400px;
-    height: 500px;
+    height: auto;
+    padding-bottom: 50px;
     margin: 50px auto;
     text-align: center;
     border-radius: 5px 5px 100px 100px;
@@ -256,11 +257,19 @@
 }
 
 .btn-proj a{
+    font-size: 12px;
     text-decoration: none;
+    transition: .6s;
 }
 
 .btn-proj a:hover{
     color: white;
+    background-color: #3f0071;
+}
+
+.btn-proj button:hover{
+    color: white;
+    background-color: #3f0071;
 }
 
 

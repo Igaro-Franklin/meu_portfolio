@@ -204,9 +204,9 @@
     margin: auto;
 }
 
-.proj-dest, .proj-dest, 
 .proj-dest{
     width: 350px;
+    height: auto;
     padding-bottom: 30px;
     margin: 50px auto;
     text-align: center;
