@@ -345,7 +345,7 @@ figcaption a:hover{
     margin: auto;
 }
 
-.habilidade-front, .habilidade-back{
+.habilidade-front, .habilidade-bd{
     width: 80%;
     margin: 40px auto;
 } 
@@ -357,14 +357,14 @@ figcaption a:hover{
     margin-top: 10px;
 }
 
-.habilidade-back h3{
+.habilidade-bd h3{
     color: rgb(255, 255, 0);
     font-size: 22px;
     text-decoration: underline;
     margin-top: 10px;
 }
 
-.habilidade-back span{
+.habilidade-bd span{
     font-size: 18px;
 }
 
