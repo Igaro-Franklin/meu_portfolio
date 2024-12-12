@@ -14,8 +14,11 @@
     <!--Icons do devicon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
-    <!--Icons do bootstrap-->
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +29,7 @@
 </head>
 <body>
     <main>
-
-    
+        <!--
         <div class=" pre-loader">
             <div class="meuNome">
                 <div class="deley1-0 letra-subindo">Í</div>
@@ -72,6 +74,7 @@
             </div>
             <div class="loader"></div>
         </div>
+        -->
     
         <header >
             <div class="logo">
@@ -119,210 +122,263 @@
                 </a>
             </div>
         </header>
-        <main>
-
-                <section id="home">
-                    <div class="img-avatar">
-                        <img src="/img/avatar/Avatar4.png" alt="avatar do Igaro">
-                    </div>
-                    <div class="texto-home">
-                        <h1>Olá, sou Ígaro Franklin...</h1>
-                        <p>
-                            Estudande do curso superior de tecnologia em desenvolvimento web na faculdade de Anhanguera.
-                            Comecei no mundo da programação a partir de uma curiosidade por conta da minha paixão por tecnologia.
-                            A curiosidade virou um hobbie e hoje é meu objetivo de carreira. Me tornar um exímio desenvolvedor web.
-                        </p>
-                        <button id="openModal" class="btn-I">Mais sobre mim</button>
-                        <div id="myModal" class="modal">
-                            <div class="modal-container">
-                                <span class="closeModal"><i class="bi bi-x-circle"></i></span>
-                                <p>
-                                    Nascido e criado em Brasília-DF, sempre estudei em escola publica. Servi ao exército brasileiro, e após o ano obrigatório
-                                    decidi sair. Em 2017 comecei a trabalhar no McDonald's como atendente, 5 meses depois fui promovido a treinador, e depois de dois anos
-                                    recebi uma proposta para trabalhar como suporte de TI, mais especificamente como Help Desk, sendo responsável por um sistema de todas as
-                                    lojas das franquias. Durante esses anos no McDonald's me formei como tecnico de gastronomia, que hoje é minha atuação. 
-                                    Sempre gostei do "visual", de como as coisa acontecem e se transforma, por conta disso surgiu uma curiosidade de saber como as páginas de internet eram criadas.
-                                    Fui vendo videos por curiosidades, acabou virando hobbie e em 2022 decidi fazer com que a programação se tornasse mais parte de mim.
-                                    Pretendo me tornar um desenvolvedor web, e confesso que tenho uma "queda" pelo front-end.
-                                     
-                            </div>
+            <section id="home">
+                <div class="img-avatar">
+                    <img src="/img/avatar/Avatar4.png" alt="avatar do Igaro">
+                </div>
+                <div class="texto-home">
+                    <h1>Olá, sou Ígaro Franklin...</h1>
+                    <p>
+                        Estudande do curso superior de tecnologia em desenvolvimento web na faculdade de Anhanguera.
+                        Comecei no mundo da programação a partir de uma curiosidade por conta da minha paixão por tecnologia.
+                        A curiosidade virou um hobbie e hoje é meu objetivo de carreira. Me tornar um exímio desenvolvedor.
+                    </p>
+                    <button id="openModal" class="btn-I">Mais sobre mim</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-container">
+                            <span class="closeModal"><i class="bi bi-x-circle"></i></span>
+                            <p>
+                                Sou Ígaro Franklin, moro em Brasilia-DF, tenho 27 anos e estou indo para o 4º e 
+                                último semestre do curso de Desenvolvimento Web na faculdade Anhanguera. Tenho 
+                                experiência em desenvolvimento web, suporte de TI e gestão de projetos. Ao 
+                                longo da minha trajetória profissional, atuei no Exército, no McDonald's e 
+                                como cozinheiro profissional, além de estagiar na ReactIT e trabalhar como 
+                                freelancer na Evolker Tecnologia.
+                                <br>
+                                Tenho conhecimento e estudos em tecnologias como Angular, ReactJS, NodeJS, Java, 
+                                SpringBoot, PHP, Laravel, Firebase e bancos de dados, além de ferramentas como 
+                                HTML, CSS e JavaScript. Recentemente, tenho me dedicado a estudos também para 
+                                mobile, fiz um curso de Kotlin no Android Studio e também estou estudando um 
+                                pouco sobre react Native. Meus últimos projetos tem se desenvolvido para 
+                                aplicações front-end e sistemas interativos.
+                            </p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section id="projetos">
-                    <div class="tilte-projetos">
-                        <h2>Meus projetos pessoais</h2>
-                    </div>
-                    <div class="proj-destaques">
-                        
-
-                        <div class="proj-dest">
-                            <h1 class="text-proj">My </br>Restaurante</h1>
-                            <img class="img-proj" src="/img/projetos/SistemaRestaurante.png" alt="Captura do site sistema de restaurante">
-                            <p class="descricao-proj">Projeto com painel para fazer e receber pedidos</p>
-                            <div class="tecnologia-proj">
-                                <ul>
-                                    <li>ReactJS</li>
-                                    <li>JS</li>
-                                    <li>CSS</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <div class="btn-proj">
-                                <button><a href="https://my-restaurante.vercel.app/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
-                                <button><a href="https://github.com/Igaro-Franklin/My-Restaurante" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
-                            </div>
+            <section id="projetos">
+                <div class="tilte-projetos">
+                    <h2>Meus projetos pessoais</h2>
+                </div>
+                <div class="proj-destaques">
+                    <div class="proj-dest">
+                        <h1 class="text-proj">My </br>Restaurante</h1>
+                        <img class="img-proj" src="/img/projetos/SistemaRestaurante.png" alt="Captura do site sistema de restaurante">
+                        <p class="descricao-proj">Projeto com painel para fazer e receber pedidos</p>
+                        <div class="tecnologia-proj">
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>JS</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
                         </div>
-
-                        <div class="proj-dest">
-                            <h1 class="text-proj">Sistema de Chamado</h1>
-                            <img class="img-proj" src="/img/projetos/SistemaDeChamado.PNG" alt="Captura do site de sistema de chamado">
-                            <p class="descricao-proj">Um sistema de chamamados integrado com firebase feito em aula</p>
-                            <div class="tecnologia-proj">
-                                <ul>
-                                    <li>ReactJS</li>
-                                    <li>JS</li>
-                                    <li>CSS</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <div class="btn-proj">
-                                <button><a href="https://aula-sistema-de-chamado.vercel.app/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
-                                <button><a href="https://github.com/Igaro-Franklin/Aula_Sistema_de_chamado" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
-                            </div>
-                        </div>
-                        
-                        <div class="proj-dest">
-                            <h1 class="text-proj">Pode</br> passar</h1>
-                            <img class="img-proj" src="/img/projetos/PodePassar.png" alt="Captura do site de Pode passar">
-                            <p class="descricao-proj">Um sistema para ajufar fazer as contas durante a compra</p>
-                            <div class="tecnologia-proj">
-                                <ul>
-                                    <li>JS</li>
-                                    <li>CSS</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <div class="btn-proj">
-                                <button><a href="https://podepassar.bohr.io/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
-                                <button><a href="https://github.com/Igaro-Franklin/PodePassar" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
-                            </div>
+                        <div class="btn-proj">
+                            <button><a href="https://my-restaurante.vercel.app/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
+                            <button><a href="https://github.com/Igaro-Franklin/My-Restaurante" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
                         </div>
                     </div>
-                    <div class="proj-segundarios">
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/StatusSite.PNG" alt="Site para geração de textos">
-                                <figcaption>
-                                    <p>MSG para status (ReactJS)</p>
+
+                    <div class="proj-dest">
+                        <h1 class="text-proj">Sistema de Chamado</h1>
+                        <img class="img-proj" src="/img/projetos/SistemaDeChamado.PNG" alt="Captura do site de sistema de chamado">
+                        <p class="descricao-proj">Um sistema de chamamados integrado com firebase feito em aula</p>
+                        <div class="tecnologia-proj">
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>JS</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </div>
+                        <div class="btn-proj">
+                            <button><a href="https://aula-sistema-de-chamado.vercel.app/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
+                            <button><a href="https://github.com/Igaro-Franklin/Aula_Sistema_de_chamado" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
+                        </div>
+                    </div>
+                    
+                    <div class="proj-dest">
+                        <h1 class="text-proj">Pode</br> passar</h1>
+                        <img class="img-proj" src="/img/projetos/PodePassar.png" alt="Captura do site de Pode passar">
+                        <p class="descricao-proj">Um sistema para ajufar fazer as contas durante a compra</p>
+                        <div class="tecnologia-proj">
+                            <ul>
+                                <li>JS</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>BOOTSTRAP</li>
+                            </ul>
+                        </div>
+                        <div class="btn-proj">
+                            <button><a href="https://podepassar.netlify.app/" target="_blank"><i class="bi bi-globe2"> Ir ao site</i></a></button>
+                            <button><a href="https://github.com/Igaro-Franklin/minhasComprar" target="_blank"><i class="bi bi-github">   Ir para GitHub</i></a></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/projetos/CompartilhaBrasilia.png" class="d-block w-75 m-auto" alt="Sistema para compartilhamento de eventos em Brasília">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Sistema para compartilhamento de eventos em Brasília (Angular)</h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://compartilha-brasilia.vercel.app/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/ProjCompartilhaBrasilia" target="_blank">Repositório</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/Colaboradores.png" class="d-block w-75 m-auto" alt="sistema para administrar colaboradores">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>ADM para Colaboradores (Angular)</h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://colaboradores-navy.vercel.app/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/colaboradores" target="_blank">Repositório</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/EstoqueDeLoja.png" class="d-block w-75 m-auto" alt="Sistema para estoque da loja">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Sistema para controle de estoque (Angular)</h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://estoquedeloja.vercel.app/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/estoque" target="_blank">Repositório</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/StatusSite.PNG" class="d-block w-75 m-auto" alt="Site para frases">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>MSG para status (ReactJS)</h5>
+                                <p class="linkProjetosSec">
                                     <a id="desabilitado">Site</a>
-                                    <a href="#">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                    <a href="https://github.com/Igaro-Franklin/Frases-Motivacionais" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/CronometroSite.PNG" alt="Cronometro">
-                                <figcaption>
-                                    <p>Cronometro (ReactJS)</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/CronometroSite.PNG" class="d-block w-75 m-auto" alt="Cronometro">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Cronometro (ReactJS)</h5>
+                                <p class="linkProjetosSec">
                                     <a id="desabilitado">Site</a>
-                                    <a href="#">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                    <a href="https://github.com/Igaro-Franklin/cronometroReact" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/TakashiContabilidade.png" alt="Takashi Contabilidade">
-                                <figcaption>
-                                    <p>Takashi Contabilidade</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/TakashiContabilidade.png" class="d-block w-75 m-auto" alt="Takashi Contabilidade">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Takashi Contabilidade</h5>
+                                <p class="linkProjetosSec">
                                     <a href="https://takashi-contabilidade.netlify.app" target="_blank">Site</a>
                                     <a href="https://github.com/Igaro-Franklin/Takashi_Contabilidade" target="_blank">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/SiqueiraMKT.png" alt="Siqueira - Grupo de mídia social">
-                                <figcaption>
-                                    <p>Siqueira - MKT digital</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/SiqueiraMKT.png" class="d-block w-75 m-auto" alt="Siqueira - Grupo de mídia social">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Siqueira - MKT digital</h5>
+                                <p class="linkProjetosSec">
                                     <a href="https://siqueira-mkt-digital.netlify.app/" target="_blank">Site</a>
                                     <a href="https://github.com/Igaro-Franklin/Siqueira-MKT-Digital" target="_blank">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/AcademiaTraining.png" alt="Academia Training">
-                                <figcaption>
-                                    <p>Academia Training</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/AcademiaTraining.png" class="d-block w-75 m-auto" alt="Academia Training">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Academia Training</h5>
+                                <p class="linkProjetosSec">
                                     <a href="https://academia-training.netlify.app/" target="_blank">Site</a>
                                     <a href="https://github.com/Igaro-Franklin/Academia-Training" target="_blank">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/img01.PNG" alt="I magem site Futuros Craques">
-                                <figcaption>
-                                    <p>Futuros Craques</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/img01.PNG" class="d-block w-75 m-auto" alt="Imagem site Futuros Craques">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Futuros Craques</h5>
+                                <p class="linkProjetosSec">
                                     <a id="desabilitado">Site</a>
-                                    <a href="https://github.com/Igaro-Franklin/Fulturos_Craques">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                    <a href="https://github.com/Igaro-Franklin/Fulturos_Craques" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/Capturar.PNG" alt="Site para uma sorveteria">
-                                <figcaption>
-                                    <p>Sorveteria</p>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/Capturar.PNG" class="d-block w-75 m-auto" alt="Site para uma sorveteria">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Sorveteria</h5>
+                                <p class="linkProjetosSec">
                                     <a id="desabilitado">Site</a>
-                                    <a href="https://github.com/Igaro-Franklin/SorveteriaReact">Repositório</a>
-                                </figcaption>
-                            </figure>
+                                    <a href="https://github.com/Igaro-Franklin/SorveteriaReact" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/TelaDeLogin.png" alt="Tela de login">
-                                <figcaption>
-                                    <p>Tela de login</p>
-                                    <a href="https://if-tela-de-login.netlify.app/">Site</a>
-                                    <a href="https://github.com/Igaro-Franklin/tela-de-login">Repositório</a>
-                                </figcaption>
-                            </figure>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/TelaDeLogin.png" class="d-block w-75 m-auto" alt="Tela de login">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5></h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://if-tela-de-login.netlify.app/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/tela-de-login" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/KiobyGames.png" alt="Kioby Games">
-                                <figcaption>
-                                    <p>Kioby Games</p>
-                                    <a href="https://kioby-games.bohr.io/">Site</a>
-                                    <a href="https://github.com/Igaro-Franklin/Kioby_Games">Repositório</a>
-                                </figcaption>
-                            </figure>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/KiobyGames.png" class="d-block w-75 m-auto" alt="Kioby Games">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Kioby Games</h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://kioby-games.bohr.io/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/Kioby_Games" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/FalcaoDeMonteVerde.PNG" alt="Falcão de Monte Verde">
-                                <figcaption>
-                                    <p>Falcão de Monte Verde</p>
-                                    <a href="https://falcaodemonteverde.bohr.io/">Site</a>
-                                    <a href="https://github.com/Igaro-Franklin/falcaodemonteverde">Repositório</a>
-                                </figcaption>
-                            </figure>
+                        <div class="carousel-item">
+                            <img src="/img/projetos/FalcaoDeMonteVerde.PNG" class="d-block w-75 m-auto" alt="Falcão de Monte Verde">
+                            <div id="cardProjSecundario" class="carousel-caption">
+                                <h5>Falcão de Monte Verde</h5>
+                                <p class="linkProjetosSec">
+                                    <a href="https://falcaodemonteverde.bohr.io/" target="_blank">Site</a>
+                                    <a href="https://github.com/Igaro-Franklin/falcaodemonteverde" target="_blank">Repositório</a>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-proj">
-                            <figure>
-                                <img src="/img/projetos/em breve.png" alt="Em breve">
-                                <figcaption>
-                                    <p>Mais projetos!</p>
-                                    <a href="#">Site</a>
-                                    <a href="#">Repositório</a>
-                                </figcaption>
-                            </figure>
+                        <div class="carousel-item">
+                        <img src="/img/projetos/em breve.png" class="d-block w-75 m-auto" alt="Em breve">
+                        <div id="cardProjSecundario" class="carousel-caption">
+                            <h5>Mais projetos!</h5>
                         </div>
                     </div>
-                </section>
+                      <!--
+                      <div class="carousel-item">
+                        <img src="" class="d-block w-75 m-auto" alt="">
+                        <div id="cardProjSecundario" class="carousel-caption">
+                            <h5></h5>
+                            <p class="linkProjetosSec">
+                                <a href="" target="_blank">Site</a>
+                                <a href="" target="_blank">Repositório</a>
+                            </p>
+                        </div>
+                      </div>
+                      -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
 
                 <section id="habilidades">
                     <h1 class="title-habilidades">Minhas habilidades como desenvolvedor</h1>

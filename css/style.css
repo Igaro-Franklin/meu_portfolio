@@ -339,12 +339,7 @@ figure img{
     width: 250px;
 }
 
-figcaption{
-    margin: 5px auto;
-    text-align: center;
-}
-
-figcaption p{
+.linkProjetosSec{
     color: white;
     margin: 10px;
 }
@@ -359,21 +354,27 @@ figcaption p{
     color: #3e007188;
 }
 
-figcaption a, #desabilitado{
+.linkProjetosSec a, #desabilitado{
     margin-top: 10px;
     text-decoration: none;
     padding: 0 5px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
+    border-left: solid 3px black;
+    border-right: solid 3px black;
     transition: .6s;
     color: #3f0071;
+    background-color: #fff;
 }
 
-figcaption a:hover{
-    background-color: #272b31;
+.linkProjetosSec a:hover{
+    padding: 5px 10px;
+    background-color: #3f0071;
     color: white;
 }
 
+#cardProjSecundario{
+    border-radius: 70px 70px 0 0;
+    background-color: #3e00716b;
+}
 
 
 /* ------------------------------------------- HABILIDADES ------------------------------------------- */
