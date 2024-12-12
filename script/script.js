@@ -36,7 +36,7 @@ iconClose.onclick = function(){
 
 
 
-// script para o modal do btn saiba mais da home
+// script para o modal do btn saiba mais do inicio
 
 const modal = document.getElementById("myModal");
 const btnModal = document.getElementById("openModal");
