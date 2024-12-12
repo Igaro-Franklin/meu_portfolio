@@ -321,41 +321,20 @@ main{
 
     /* CARDS PROJETOS */
 
-    .proj-segundarios{
-        width: 90%;
-        margin: 30px auto 100px;
-        display: flex;
-        overflow: auto;
-        background-color: #3f0071;
-    }
-
-    .card-proj{
-        width: 280px;
-        height: 220px;
-        margin: 10px;
-        background-color: #5d697a;
-    }
-
-    figure img{
-        width: 250px;
-    }
-
     .linkProjetosSec{
         color: white;
         margin: 10px;
     }
 
     #desabilitado{
-        width: 40px;
-        padding: 0;
-        cursor: not-allowed;
+        display: none;
     }
 
     #desabilitado:hover{
         color: #3e007188;
     }
 
-    .linkProjetosSec a, #desabilitado{
+    .linkProjetosSec a{
         margin-top: 10px;
         text-decoration: none;
         padding: 0 5px;
