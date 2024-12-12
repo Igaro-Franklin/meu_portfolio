@@ -55,3 +55,16 @@ window.onclick = function(event){
         modal.style.display = "none"
     }
 }
+
+
+// Seleciona o container principal
+const container = document.querySelector('.containerIconsHabilidade');
+
+// Duplica os ícones para criar o efeito de scroll infinito
+const duplicateIcons = () => {
+    const clone = container.innerHTML; // Clona o conteúdo original
+    container.innerHTML += clone; // Adiciona o clone ao final
+};
+
+// Executa a duplicação ao carregar a página
+duplicateIcons();

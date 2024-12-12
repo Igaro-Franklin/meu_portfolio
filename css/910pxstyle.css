@@ -91,403 +91,307 @@
 
 
 
-/* ------------------------------------------- HOME ------------------------------------------- */
+    /* ------------------------------------------- HOME ------------------------------------------- */
 
-#home{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    #home{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.img-avatar, .texto-home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .img-avatar, .texto-home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.img-avatar{
-    width: 80%;
-    margin: auto 10%;
-}
-.img-avatar img{
-    width: 300px;
-}
+    .img-avatar{
+        width: 80%;
+        margin: auto 10%;
+    }
+    .img-avatar img{
+        width: 300px;
+    }
 
-.texto-home{
-    margin: auto 10%;
-    width: 80%;
-    color: white;
-    flex-direction: column;
-}
+    .texto-home{
+        margin: auto 10%;
+        width: 80%;
+        color: white;
+        flex-direction: column;
+    }
 
-.texto-home p{
-    margin: 50px;
-    width: 80%;
-    font-family: 'Abel', sans-serif;
-}
+    .texto-home p{
+        margin: 50px;
+        width: 80%;
+        font-family: 'Abel', sans-serif;
+    }
 
-/* modal do saiba mais */ 
+    /* modal do saiba mais */ 
 
-.btn-I{
-    padding: 10px;
-    background-color: #3f0071;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px white;
+    .btn-I{
+        padding: 10px;
+        background-color: #3f0071;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px white;
+        
+    }
+
+    .modal{
+        display: none;
+        position: fixed;
+        z-index: 3;
+        padding-top: 200px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    .modal-container{
+        background-color: #3f0071;
+        margin: auto;
+        padding: 20px;
+        border: 10px double #241023;
+        width: 60%;
+    }
+
+    .closeModal{
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+        color: #5d697a;
+        transition: all .6s ease-in-out;
+    }
+
+
+    /* ------------------------------------------- PROJETOS ------------------------------------------- */
+
+    #projetos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgba(36,16,35,1) 79%, rgba(0,0,0,1) 100%);
+    }
+
+    .tilte-projetos{
+        width: 100%;
+        text-align: center;
+        margin: 100px auto 50px;
+        box-shadow: 1px 1px 1px white;
+        background-color: black;
+    }
+
+    .tilte-projetos h2{
+        color: white;
+        padding: 5px;
+    }
+
+    .proj-destaques{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .proj-dest{
+        width: 400px;
+        height: auto;
+        padding-bottom: 50px;
+        margin: 50px auto;
+        text-align: center;
+        border-radius: 5px 5px 100px 100px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .text-proj{
+        color: white;
+        margin: 15px;
+    }
+
+    .img-proj{
+        width: 370px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px white;
+    }
+
+    .descricao-proj{
+        width: 90%;
+        margin: 10px auto;
+        font-size: 14px;
+        color: white;
+    }
+
+    .tecnologia-proj{
+        width: 60%;
+        color: white;
+        margin: 15px auto;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.616);
+        border-radius: 0 50% 50% 0;
+    }
+
+    .tecnologia-proj ul li{
+        list-style: none;
+    }
+
+    .btn-proj{
+        width: 100%;
+    }
+
+    .btn-proj button{
+        width: 40%;
+        padding: 5px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .6s;
+        box-shadow: 1px 1px 3px #3f0071;
+    }
+
+    .btn-proj a{
+        font-size: 12px;
+        text-decoration: none;
+        transition: .6s;
+    }
+
+    .btn-proj a:hover{
+        color: white;
+        background-color: #3f0071;
+    }
+
+    .btn-proj button:hover{
+        color: white;
+        background-color: #3f0071;
+    }
+
+
+    /* CARDS PROJETOS */
+
+    .proj-segundarios{
+        width: 90%;
+        margin: 30px auto 100px;
+        display: flex;
+        overflow: auto;
+        background-color: #3f0071;
+    }
+
+    .card-proj{
+        width: 280px;
+        height: 220px;
+        margin: 10px;
+        background-color: #5d697a;
+    }
+
+    figure img{
+        width: 250px;
+    }
+
+    figcaption{
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    figcaption p{
+        color: white;
+        margin: 10px;
+    }
+
+    figcaption a{
+        margin-top: 10px;
+        text-decoration: none;
+        padding: 0 5px;
+        border-left: solid 1px black;
+        border-right: solid 1px black;
+        transition: .6s;
+        color: #3f0071;
+    }
+
+    figcaption a:hover{
+        background-color: #272b31;
+        color: white;
+    }
+
+    /* ------------------------------------------- HABILIDADES ------------------------------------------- */
+
+    #habilidades {
+        background-color: #3f0071;
+        padding: 100px 0;
+        text-align: center;
+        overflow: hidden;
+    }
     
-}
+    #habilidades h3 {
+        font-size: 45px;
+        margin: auto 30px;
+        color: #fff;
+    }
+    
+    .containerIconsHabilidade {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        gap: 20px; 
+        width: max-content; 
+        animation: scroll 30s linear infinite;
+    }
+    
+    .containerIconsHabilidade img {
+        width: 100px;
+        flex-shrink: 0;
+        transition: .4s;
+    }
 
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 3;
-    padding-top: 200px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.95);
-}
-
-.modal-container{
-    background-color: #3f0071;
-    margin: auto;
-    padding: 20px;
-    border: 10px double #241023;
-    width: 60%;
-}
-
-.closeModal{
-    float: right;
-    font-size: 30px;
-    cursor: pointer;
-    color: #5d697a;
-    transition: all .6s ease-in-out;
-}
-
-
-/* ------------------------------------------- PROJETOS ------------------------------------------- */
-
-#projetos{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(0deg, rgba(36,16,35,1) 79%, rgba(0,0,0,1) 100%);
-}
-
-.tilte-projetos{
-    width: 100%;
-    text-align: center;
-    margin: 100px auto 50px;
-    box-shadow: 1px 1px 1px white;
-    background-color: black;
-}
-
-.tilte-projetos h2{
-    color: white;
-    padding: 5px;
-}
-
-.proj-destaques{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.proj-dest{
-    width: 400px;
-    height: auto;
-    padding-bottom: 50px;
-    margin: 50px auto;
-    text-align: center;
-    border-radius: 5px 5px 100px 100px;
-    background-color: rgb(0, 0, 0);
-}
-
-.text-proj{
-    color: white;
-    margin: 15px;
-}
-
-.img-proj{
-    width: 370px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px white;
-}
-
-.descricao-proj{
-    width: 90%;
-    margin: 10px auto;
-    font-size: 14px;
-    color: white;
-}
-
-.tecnologia-proj{
-    width: 60%;
-    color: white;
-    margin: 15px auto;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.616);
-    border-radius: 0 50% 50% 0;
-}
-
-.tecnologia-proj ul li{
-    list-style: none;
-}
-
-.btn-proj{
-    width: 100%;
-}
-
-.btn-proj button{
-    width: 40%;
-    padding: 5px;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .6s;
-    box-shadow: 1px 1px 3px #3f0071;
-}
-
-.btn-proj a{
-    font-size: 12px;
-    text-decoration: none;
-    transition: .6s;
-}
-
-.btn-proj a:hover{
-    color: white;
-    background-color: #3f0071;
-}
-
-.btn-proj button:hover{
-    color: white;
-    background-color: #3f0071;
-}
+    .containerIconsHabilidade img:hover {
+        margin-top: -50px;
+    }
+    
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
 
 
-/* CARDS PROJETOS */
+    /* ------------------------------------------- FORMAÇÃO ------------------------------------------- */
 
-.proj-segundarios{
-    width: 90%;
-    margin: 30px auto 100px;
-    display: flex;
-    overflow: auto;
-    background-color: #3f0071;
-}
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
-.card-proj{
-    width: 280px;
-    height: 220px;
-    margin: 10px;
-    background-color: #5d697a;
-}
+    footer h3{
+        display: none;
+    }
 
-figure img{
-    width: 250px;
-}
+    .footer-contato{
+        display: flex;
+        margin: 10px;
+        color: white;
+    }
 
-figcaption{
-    margin: 5px auto;
-    text-align: center;
-}
+    .footer-icons{
+        display: flex;
+        margin: 10px 15px;
+    }
 
-figcaption p{
-    color: white;
-    margin: 10px;
-}
-
-figcaption a{
-    margin-top: 10px;
-    text-decoration: none;
-    padding: 0 5px;
-    border-left: solid 1px black;
-    border-right: solid 1px black;
-    transition: .6s;
-    color: #3f0071;
-}
-
-figcaption a:hover{
-    background-color: #272b31;
-    color: white;
-}
-
-/* ------------------------------------------- HABILIDADES ------------------------------------------- */
-
-#habilidades{
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 26%, rgba(36,16,35,1) 90%);
-}
-
-#habilidades h1{
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin: 100px auto 0;
-    box-shadow: 5px 5px 1px black;
-    background-color: #3f0071;
-}
-
-.container-habilidades{
-    width: 80%;
-    height: 700px;
-    margin: auto;
-}
-
-.habilidade-front, .habilidade-bd{
-    width: 80%;
-    margin: 40px auto;
-} 
-
-.habilidade-front h3{
-    color: rgb(0, 162, 255);
-    font-size: 22px;
-    text-decoration: underline;
-    margin-top: 10px;
-}
-
-.habilidade-bd h3{
-    color: rgb(255, 255, 0);
-    font-size: 22px;
-    text-decoration: underline;
-    margin-top: 10px;
-}
-
-.habilidade-bd span{
-    font-size: 18px;
-}
-
-.tecno{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.tecno i{
-    font-size: 70px;
-    margin: 20px 20px;
-    color: white;
-    filter: drop-shadow(2px 5px 2px #3f0071);
-}
-
-
-
-.anhanguera{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/1.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* logica de programação */
-
-.log-programacao{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/2.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* design grafico */
-
-.des-grafico{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/3.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* html e css na prática */
-
-.html-css{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/4.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* JS para iniciantes */
-
-.workover{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/7.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* banco de dados */
-
-.danki-code{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/6.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* Git e GitHub */
-
-.git-github{
-    background: linear-gradient(#3e00718f, #00000098), url(/img/certificados/5.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-/* ------------------------------------------- FORMAÇÃO ------------------------------------------- */
-
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-footer h3{
-    display: none;
-}
-
-.footer-contato{
-    display: flex;
-    margin: 10px;
-    color: white;
-}
-
-.footer-icons{
-    display: flex;
-    margin: 10px 15px;
-}
-
-.footer-icons a{
-    margin-left: 10px;
-    color: white;
-    transition: .5s;
-    text-decoration: none;
-}
+    .footer-icons a{
+        margin-left: 10px;
+        color: white;
+        transition: .5s;
+        text-decoration: none;
+    }
 
 
 
